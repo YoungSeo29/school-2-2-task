@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>주문하기</title>
+  <style>
+    body {
+      background-color: rgb(225, 174, 238);
+    }
+  </style>
+</head>
+<body>
+  <h1>세상에 단 하나뿐인 케이크 주문하기</h1>
+  <form>
+    <fieldset>
+      <legend>베이스 선택하기</legend>
+      <img src="cake_base.png" width="400" height="180">
+      <p>바탕이 될 케이크를 선택하세요</p>
+        <li>
+          <label><input type="checkbox" value="b_1">블루</label> <small>(소다맛)</small>
+        </li>
+        <li>
+          <label><input type="checkbox" value="b_2">연두</label> <small>(녹차맛)</small>
+        </li>
+        <li>
+          <label><input type="checkbox" value="b_3">핑크</label> <small>(딸기맛)</small>
+        </li>
+        <li>
+          <label><input type="checkbox" value="b_4">화이트</label> <small>(바닐라맛)</small>
+        </li>
+    </fieldset>
+    <fieldset>
+      <legend>문구 작성하기</legend>
+      레터링 문구 <br>
+      <label for="memo"></label>
+            <textarea id="memo" cols="40" rows="4"></textarea> <small>(14자 이내 추천)</small>
+    </fieldset>
+    <fieldset>
+      <legend>사진 전송</legend>
+      <p>사진 삽입을 원하시면 아래의 주소로 주문번호와 사진을 함께 메일을 보내주세요.</p>
+      <i>yseokim0212@yonsei.ac.kr</i>
+    </fieldset>
+  </form>
+  <form>
+    <input type="button" value="주문하기" onclick="window.open('done_cake.html')">
+  </form>
+</body>
+</html>

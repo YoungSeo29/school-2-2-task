@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 가입</title>
+  <style>
+    body {
+      background-color: #A0B036;
+    }
+  </style>
+</head>
+<body>
+  <h1>회원 가입</h1>
+  <div id="container">
+  <form>
+    <fieldset>
+      <legend>ID/PW</legend>
+      <ul>
+        <li>
+          <label for ="mail">MAIL</label>
+          <input type="text" id="mail">
+        </li>
+        <li>
+          <label for ="id">ID</label>
+          <input type="text" id="id">
+        </li>
+        <li>
+          <label for ="pw">PW</label>
+          <input type="text" id="pw"> <small>(비밀번호는 9~12자의 영문 대소문자, 숫자, 특수문자를 혼용)</small>
+        </li>
+        <li>
+          <label for ="pw2">PW CHECK</label>
+          <input type="text" id="pw2"> <small>(비밀번호는 9~12자의 영문 대소문자, 숫자, 특수문자를 혼용)</small>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>광고성 SMS/MAIL 수신 동의</legend>
+      <input type="radio" name="sms" id="sms_y">
+      <label for="sms_y">수신 동의</label>
+      <input type="radio" name="sms" id="sms_n"> <small>(추후 변경 불가능)</small>
+      <label for="sms_n">수신 비동의</label>
+    </fieldset>
+    <fieldset>
+      <legend>개인 정보 수집 동의</legend>
+      <input type="radio" name="info" id="info_y">
+      <label for="info_y">수집 동의</label>
+      <input type="radio" name="info" id="info_n">
+      <label for="info_n">수집 비동의</label> <small>(추후 변경 불가능)</small>
+    </fieldset>
+    <fieldset>
+      <legend>기본 배송지 설정</legend>
+      <ul id="adress">
+        <li>
+         <label for="name">이름</label>
+         <input type="text" id="name">
+        </li>
+        <li>
+          <label for="user_adress">주소</label>
+          <input type="text" id="user_adress">
+        </li>
+        <li>
+          <label for="date">배송 출발일</label>
+          <input type="date" id="date"> <small>(출발일로부터 최소 1주일 후 발송)</small>
+        </li>
+        <li>
+          <label for="memo">배송 메모</label><br>
+          <textarea id="memo" cols="50" rows="6"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+    <form>
+      <input type="button" value="완료" onclick="window.open('done_join.html')">
+    </form>
+  </form>
+</div>
+</body>
+</html>

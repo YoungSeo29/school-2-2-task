@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>주문하기</title>
+</head>
+<body>
+  <h1>홍삼 주문하기</h1>
+  
+  <form>
+    <fieldset>
+      <legend>상품 선택하기</legend>
+      <p>성별을 선택하세요</p>
+      <label>
+        <select>
+          <option>-----</option>
+          <option value="male">남자</option>
+          <option value="female">여자</option>
+        </select>
+      </label>
+      <p>연령대를 선택하세요</p>
+      <label>
+        <select>
+          <option>-----</option>
+          <option value="kids">어린이</option>
+          <option value="teenager">청소년</option>
+          <option value="young-aged">청년</option>
+          <option value="middle-aged">중장년</option>
+          <option value="old-aged">노년</option>
+        </select>
+      </label>
+      <p>필요한 건강 영역을 선택하세요</p>
+      <label>
+        <select>
+          <option>-----</option>
+          <option value="eye">눈 건강</option>
+          <option value="health">기초체력</option>
+          <option value="liver">간/신장</option>
+          <option value="digest">소화기관</option>
+          <option value="blood">혈액순환</option>
+          <option value="study">기억/학습력</option>
+          <option value="growth">성장</option>
+        </select>
+      </label>
+    </fieldset>
+  </form>
+  <form>
+    <input type="button" value="맞춤 상품 보러 가기" onclick="window.open('material.html')">
+  </form>
+</body>
+</html>
